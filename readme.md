@@ -67,12 +67,12 @@ _onChange => form => console.log(form);
 	number: "incomplete",
 	expiry: "incomplete",
 	cvc: "incomplete",
-	name: "incomplete", 
+	name: "incomplete",
 	postalCode: "incomplete",
   },
 };
 
-// Notes: 
+// Notes:
 // cvc, name, & postalCode will only be available when the respective props is enabled (e.g. requiresName, requiresCVC)
 ```
 
@@ -117,6 +117,7 @@ LiteCreditCardInput does not support `requiresName`, `requiresCVC`, and `require
 |requiresCVC | PropTypes.bool | Shows CVC field<br/> Default to `true` |
 |requiresPostalCode | PropTypes.bool | Shows postalCode field<br/> Default to `false` |
 |validatePostalCode | PropTypes.func | Function to validate postalCode, expects `incomplete`, `valid`, or `invalid` as return values|
+|horizontal | PropTypes.bool | enables horizontal view on CreditCardInput <br/> Defaults to `true` |
 |allowScroll | PropTypes.bool | enables horizontal scrolling on CreditCardInput <br/> Defaults to `false` |
 |cardBrandIcons | PropTypes.object | brand icons for CardView. see `./src/Icons.js` for details |
 | additionalInputsProps | PropTypes.objectOf(TextInput.propTypes) | An object with Each key of the object corresponding to the name of the field. Allows you to change all props documented in [RN TextInput](https://facebook.github.io/react-native/docs/textinput.html).
