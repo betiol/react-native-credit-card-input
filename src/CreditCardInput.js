@@ -163,7 +163,6 @@ export default class CreditCardInput extends Component {
           expiry={expiry}
           cvc={cvc} />
         <ScrollView ref="Form"
-          horizontal
           keyboardShouldPersistTaps="always"
           horizontal={horizontal}
           scrollEnabled={allowScroll}
